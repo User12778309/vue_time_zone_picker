@@ -1,38 +1,44 @@
 <script setup>
+
 import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
-  <div class="container mx-auto ">
-    <div class="p-5 m-5">
+  <div class="body">
+  <div class="container mx-auto" align="center">
+    <div class="p-5 m-5 doc_div">
+
+      <h1 class="doc_title">Framework use</h1>
 
       <div class="flex">
         <a href="https://vite.dev" target="_blank" class="flex-1 p-5">
-          <img src="/vite.svg" class="logo" alt="Vite logo" />
+          <img src="/vite.svg" class="logo" alt="Vite logo"/>
         </a>
 
         <a href="https://vuejs.org/" target="_blank" class="flex-1 p-5">
-          <img src="./assets/vue.svg" class="logo vue" alt="Vue logo p-5" />
+          <img src="./assets/vue.svg" class="logo vue" alt="Vue logo p-5" width="100" />
         </a>
 
 
         <a href="https://primevue.org/" target="_blank" class="flex-1 p-5">
-         <h1>Primevue</h1>
+         <img src="https://i2.wp.com/www.primefaces.org/wp-content/uploads/2021/10/primevue-logo-1.png?fit=263%2C300&ssl=1" width="75" class="mt-2">
         </a>
 
         <a href="https://tailwindcss.com/docs/" target="_blank" class="flex-1 p-5">
-         <h1>Tailwind</h1>
+         <img src="https://shadowblood.gallerycdn.vsassets.io/extensions/shadowblood/tailwind-moon/3.0.2/1673948732518/Microsoft.VisualStudio.Services.Icons.Default" width="100">
         </a>
 
         <a href=" https://github.com/UserQuentyn/vue-time_zone_selector" target="_blank" class="flex-1 p-5">
-         <h1>Depot Quentyn</h1>
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png" width="100">
         </a>
 
       
       </div>
     </div>
 
-    <HelloWorld msg="Hello Mathys, c'est vu !" />
+    <HelloWorld msg="Vue time zone selector" class="main_title"/>
+  </div>
   </div>
 </template>
 
@@ -43,10 +49,22 @@ import HelloWorld from './components/HelloWorld.vue'
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.main_title
+{
+  font-family:"Courier New";
+  font-weight:bold;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.doc_title
+{
+  font-size:50px;
+  font-family: "Courier New";
+}
+
+.body
+{
+  background-image:linear-gradient(black,purple);
+  height:1000px;
 }
 </style>

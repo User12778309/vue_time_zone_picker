@@ -7,7 +7,7 @@
 <template>
 <div>
 
-  <h2>Composant Quentyn</h2>
+  <img src="https://github.com/UserQuentyn/vue-time_zone_selector/blob/main/Assets/fuseau-heure.png?raw=true" alt="">
   <slot name="content">
 
   </slot>

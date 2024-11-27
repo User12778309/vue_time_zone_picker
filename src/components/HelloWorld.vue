@@ -6,6 +6,8 @@ import Card from 'primevue/card';
 import Dialog from 'primevue/dialog';
 import InputText from 'primevue/inputtext';
 
+import 'primeicons/primeicons.css'
+
 
 import Popover from 'primevue/popover';
 
@@ -17,39 +19,32 @@ defineProps({
 })
 
 const visible = ref(false);
-
-const value = ref(0)
+;
 
 const toggle = (event) => {
     op.value.toggle(event);
 }
 
 const op = ref();
-const members = ref([
-    { name: 'Amy Elsner', image: 'amyelsner.png', email: 'amy@email.com', role: 'Owner' },
-    { name: 'Bernardo Dominic', image: 'bernardodominic.png', email: 'bernardo@email.com', role: 'Editor' },
-    { name: 'Ioni Bowcher', image: 'ionibowcher.png', email: 'ioni@email.com', role: 'Viewer' }
-]);
+;
 
 </script>
 
-<template>
+<template align="center">
 
-  <Card class="ml-5 size-96">
-    <template #title>Intro</template>
+  <Card class="ml-5 size-96" align="center">
     <template #content>
       <div class="m-4">
 
-        <h1 class="text-3xl font-bold">
+        <h1 class="text-3xl font-bold mt-10">
           {{ msg }}
         </h1>
 
         <div class="flex flex-col">
           <div class="flex-0">
-            <Button type="button" icon="pi pi-share-alt" label="Popup" @click="toggle" />
+            <Button type="button" icon="pi pi-globe" label="Select zone" @click="toggle" class="mt-10"/>
           </div>
           <div class="flex-0">
-            <h1>{{ value }}</h1>
           </div>
 
         </div>
@@ -83,10 +78,9 @@ const members = ref([
 -->
 
     <Popover ref="op">
-            <div class="flex flex-col gap-4 w-[25rem]">
+            <div class="flex flex-col gap-4 w-[35rem]">
                 <div>
-                    <h1>Hello </h1>
-                    <Button type="button" label="Inc" @click="value = value+1"></Button>
+                    <h1 class="popover_title">Select your zone</h1>
                     <TimeZonePicker>
                       <!--
                       <template #content>
@@ -106,5 +100,17 @@ const members = ref([
 <style scoped>
 .read-the-docs {
   color: #888;
+}
+
+.popover_title
+{
+  font-size:45px;
+
+  margin-top:25px;
+  margin-bottom:25px;
+  margin-left:75px;
+  margin-right:50px;
+
+  font-family: "Courier New";
 }
 </style>
