@@ -5,6 +5,12 @@
 import HelloWorld from './components/HelloWorld.vue'
 console.warn("Hello DEV, Welcom to DEV zone")
 
+
+function easter_egg()
+{
+  console.log("TEST")
+}
+
 </script>
 
 <template>
@@ -12,6 +18,7 @@ console.warn("Hello DEV, Welcom to DEV zone")
   <div align="center">
     <div class="p-5 m-5 doc_div">
 
+      <button class="opacity-0 cursor-default" @mousedown="easter_egg">Grouaaaaaaaaaa</button>
       <h1 class="doc_title">Framework use</h1>
 
       <div class="flex">

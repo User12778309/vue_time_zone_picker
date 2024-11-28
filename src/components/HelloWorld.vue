@@ -44,7 +44,7 @@ const op = ref();
 
         <div class="flex flex-col border-10">
           <div class="flex-0">
-            <Button type="button" icon="pi pi-globe" label="Select zone" @click="toggle" class="mt-10 select_zone_button"/>
+            <Button type="button" size="large"@click="toggle" class="select_zone_button"><i class="pi pi-globe" style="font-size:75px;color:white"></i></Button>
           </div>
           <div class="flex-0">
           </div>
@@ -58,7 +58,7 @@ const op = ref();
     <Popover ref="op" align="center">
             <div class="flex flex-col gap-4 w-[35rem] main_popover_div">
                 <div>
-                    <h1 class="text-5xl mt-3 mb-10">Select your zone</h1>
+                    <h1 class="text-5xl mt-3 mb-10 main_popover_title">Select your zone</h1>
                     <TimeZonePicker>
                       <!--  Nothing Here  -->
                     </TimeZonePicker>
@@ -71,7 +71,8 @@ const op = ref();
 </template>
 
 <style scoped>
-.read-the-docs {
+.read-the-docs 
+{
   color: #888;
 }
 
@@ -89,5 +90,18 @@ const op = ref();
 .main_card
 {
   width:1000px;
+}
+
+.select_zone_button
+{
+  margin-top: 100px;
+  height:100px;
+  width:300px;
+}
+
+.main_popover_title
+{
+  font-family: "Courier New";
+
 }
 </style>

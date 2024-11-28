@@ -35,19 +35,19 @@ class Mouse
     {
       this.x = 0
       this.y = 0
-      this.context = document.getElementById(canvas_data.id)
     }
 
     mouse_move(event)
     { 
         this.x = event.clientX
         this.y = event.clientY
-        console.log("X : " + this.x + " | Y : " + this.y),1000
+        console.log("X : " + this.x + " | Y : " + this.y)
+
     }
 
     mouse_leave()
     {
-        console.log("Mouve Leave")
+        console.log("Mouse Leave")
     }
 
     mouse_down()
@@ -58,25 +58,36 @@ class Mouse
 
 }
 
-const mouse = new Mouse
-console.log(mouse.x)
+const mouse = new Mouse()
 
-function range(a,b)
+class Canvas
 {
-    for (a = a; a <= b; a++) {
-        console.log(a)
-    } 
+
+    get_all_canvas()
+    {
+      canvas_data.value.forEach((item )=> {
+        const canvas = document.getElementById(item.id)
+        const canvas_context = canvas.GetContext("2d")
+        const canvas_image_data = canvas_context.getImageData(mouse.x,mouse.y,1,1)
+
+        const [r,g,b] = canvas_image_data.data
+      })
+      
+    }
 }
 
-</script>
 
+
+console.log(mouse.x)
+
+</script>
 
 <template>
   <div class="canvas_div relative cursor-pointer">
 
   <img src="/public/canvas/fuseau-heure.png" class="absolute">
   
-  <img v-for="item in canvas_data" :src="item.path" class="absolute hover:opacity-0 opacity-50 time_selector_canvas" @mouseleave="mouse.mouse_leave" @mousemove="mouse.mouse_move" @mousedown="mouse.mouse_down">
+  <img v-for="item in canvas_data" :src="item.path" :id="item.id" class="absolute hover:opacity-0 opacity-50 time_selector_canvas" @mouseleave="mouse.mouse_leave" @mousemove="mouse.mouse_move" @mousedown="mouse.mouse_down">
   <slot name="content">
 
   </slot>
@@ -89,3 +100,10 @@ function range(a,b)
 
 <style scoped>
 </style>
+
+
+
+
+
+
+
