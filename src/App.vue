@@ -7,31 +7,31 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div class="body">
-  <div class="container mx-auto" align="center">
+  <div class="bg-gradient-to-t from-purple-500 via-black-500 to-black-500 body">
+  <div align="center">
     <div class="p-5 m-5 doc_div">
 
       <h1 class="doc_title">Framework use</h1>
 
       <div class="flex">
-        <a href="https://vite.dev" target="_blank" class="flex-1 p-5">
+        <a href="https://vite.dev" target="_blank" class="hover:scale-125 ease-out duration-300 flex-1 p-5">
           <img src="/vite.svg" class="logo" alt="Vite logo"/>
         </a>
 
-        <a href="https://vuejs.org/" target="_blank" class="flex-1 p-5">
+        <a href="https://vuejs.org/" target="_blank" class="hover:scale-125 ease-out duration-300 flex-1 p-5">
           <img src="./assets/vue.svg" class="logo vue" alt="Vue logo p-5" width="100" />
         </a>
 
 
-        <a href="https://primevue.org/" target="_blank" class="flex-1 p-5">
+        <a href="https://primevue.org/" target="_blank" class="hover:scale-125 ease-out duration-300 hoverflex-1 p-5">
          <img src="https://i2.wp.com/www.primefaces.org/wp-content/uploads/2021/10/primevue-logo-1.png?fit=263%2C300&ssl=1" width="75" class="mt-2">
         </a>
 
-        <a href="https://tailwindcss.com/docs/" target="_blank" class="flex-1 p-5">
+        <a href="https://tailwindcss.com/docs/" target="_blank" class="hover:scale-125 ease-out duration-300 flex-1 p-5">
          <img src="https://shadowblood.gallerycdn.vsassets.io/extensions/shadowblood/tailwind-moon/3.0.2/1673948732518/Microsoft.VisualStudio.Services.Icons.Default" width="100">
         </a>
 
-        <a href=" https://github.com/UserQuentyn/vue-time_zone_selector" target="_blank" class="flex-1 p-5">
+        <a href=" https://github.com/UserQuentyn/vue-time_zone_selector" target="_blank" class="hover:scale-125 ease-out duration-300 flex-1 p-5">
          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png" width="100">
         </a>
 
@@ -66,7 +66,6 @@ import HelloWorld from './components/HelloWorld.vue'
 
 .body
 {
-  background-image:linear-gradient(black,purple);
-  height:1000px;
+  height: 1500px;
 }
 </style>
