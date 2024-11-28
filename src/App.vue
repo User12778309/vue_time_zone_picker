@@ -3,6 +3,7 @@
 <script setup>
 
 import HelloWorld from './components/HelloWorld.vue'
+console.warn("Hello DEV, Welcom to DEV zone")
 
 </script>
 
