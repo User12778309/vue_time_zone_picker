@@ -34,11 +34,11 @@ const op = ref();
 
 <template align="center">
 
-  <Card class="ml-5 size-96" align="center">
+  <Card class="ml-5 size-96 main_card" align="center">
     <template #content>
       <div class="m-4">
 
-        <h1 class="text-3xl font-bold mt-10">
+        <h1 class="text-3xl font-bold mt-10 main_card_text">
           {{ msg }}
         </h1>
 
@@ -50,46 +50,17 @@ const op = ref();
           </div>
 
         </div>
-
-       
-        <!--
-        <Button class="ml-4 mt-5" label="Oui"  @click="visible = true"/>
-        -->
       </div>
     </template>
   </Card>
 
-<!--
-  <div class="card flex justify-center">
-        <Dialog v-model:visible="visible" modal header="Edit Profile" :style="{ width: '25rem' }">
-            <span class="text-surface-500 dark:text-surface-400 block mb-8">Update your information.</span>
-            <div class="flex items-center gap-4 mb-4">
-                <label for="username" class="font-semibold w-24">Username</label>
-                <InputText id="username" class="flex-auto" autocomplete="off" />
-            </div>
-            <div class="flex items-center gap-4 mb-8">
-                <label for="email" class="font-semibold w-24">Email</label>
-                <InputText id="email" class="flex-auto" autocomplete="off" />
-            </div>
-            <div class="flex justify-end gap-2">
-                <Button type="button" label="Cancel" severity="secondary" @click="visible = false"></Button>
-                <Button type="button" label="Save" @click="visible = false"></Button>
-            </div>
-        </Dialog>
-    </div>
--->
 
     <Popover ref="op" align="center">
-            <div class="flex flex-col gap-4 w-[35rem]">
+            <div class="flex flex-col gap-4 w-[35rem] main_popover_div">
                 <div>
                     <h1 class="text-5xl mt-3 mb-10">Select your zone</h1>
                     <TimeZonePicker>
-                      <!--
-                      <template #content>
-                        <h1>Hello</h1>
-                      </template>
-                      -->
-                      
+                      <!--  Nothing Here  -->
                     </TimeZonePicker>
                 </div>
             </div>
@@ -102,5 +73,21 @@ const op = ref();
 <style scoped>
 .read-the-docs {
   color: #888;
+}
+
+.main_popover_div
+{
+  height:500px;
+}
+
+.main_card_text
+{
+  font-family: "Courier New";
+  font-size:40px;
+}
+
+.main_card
+{
+  width:1000px;
 }
 </style>

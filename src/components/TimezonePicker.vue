@@ -3,6 +3,16 @@ import { ref } from "vue"
 
 console.log("Hello DEV, select zone")
 
+function test_hover()
+{
+  console.log("Mouse Over")
+}
+
+function test_mouse_leave()
+{
+  console.log("Mouve Leave")
+}
+
 const canvas_data = ref([
   {id:"-1",path:"./canvas/-1.png"},
   {id:"-2",path:"./canvas/-2.png"},
@@ -39,7 +49,7 @@ const canvas_data = ref([
 
   <img src="/public/canvas/fuseau-heure.png" class="absolute">
   
-  <img v-for="item in canvas_data" :src="item.path" class="absolute time_selector_canvas">
+  <img v-for="item in canvas_data" :src="item.path" class="absolute time_selector_canvas" @mouseover="test_hover()" @mouseleave="test_mouse_leave()">
   <slot name="content">
 
   </slot>
@@ -52,6 +62,9 @@ const canvas_data = ref([
 
 <style scoped>
 
-/* Nothing here */
+.time_selector_canvas:hover
+{
+    opacity:0;
+}
 
 </style>
