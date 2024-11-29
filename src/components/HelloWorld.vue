@@ -72,6 +72,7 @@ const op = ref();
 
 <style scoped>  /* Nothing Here */
 
+
 .easter_egg_div
 {
   margin-top:375px;
@@ -117,7 +118,6 @@ const op = ref();
 .main_popover_title
 {
   font-family: "Courier New";
-
 }
 </style>
 

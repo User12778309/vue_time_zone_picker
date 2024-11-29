@@ -16,7 +16,7 @@
 
 ## Jour 2 :
 ### Decouvert des canvas
-### Istallation de GitKraken
+### Installation de GitKraken
 
 <br>
 

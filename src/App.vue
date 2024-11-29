@@ -53,8 +53,6 @@ function easter_egg()
   github_a_var.href= "https://freepngimg.com/save/81977-kaiju-godzilla-figure-netflix-character-fictional-animal/1500x701"
 
   doc_title_text.innerHTML = ("Grouuuuuaaaaaaa")
-
-  const main_div_variable = document.getElementById("main_div")
   
 }
 
@@ -62,7 +60,7 @@ function easter_egg()
 
 <template>
   <div class="body">
-  <div align="center" id="main_div">
+  <div align="center">
     <div class="p-5 m-5 doc_div">
 
       <button class="opacity-0 cursor-default" @mousedown="easter_egg">Grouaaaaaaaaaa</button>
