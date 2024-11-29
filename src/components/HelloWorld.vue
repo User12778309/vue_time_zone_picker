@@ -44,7 +44,7 @@ const op = ref();
 
         <div class="flex flex-col border-10">
           <div class="flex-0">
-            <Button type="button" size="large"@click="toggle" class="select_zone_button"><i class="pi pi-globe" style="font-size:75px;color:white"></i></Button>
+            <Button type="button" size="large"@click="toggle" class="select_zone_button"><i class="pi pi-globe" style="font-size:50px;color:white"></i></Button>
           </div>
           <div class="flex-0">
           </div>
@@ -70,11 +70,7 @@ const op = ref();
 
 </template>
 
-<style scoped>
-.read-the-docs 
-{
-  color: #888;
-}
+<style scoped>  /* Nothing Here */
 
 .main_popover_div
 {
@@ -100,7 +96,16 @@ const op = ref();
 {
   margin-top: 100px;
   height:100px;
-  width:300px;
+  width:200px;
+  transition: width 0.5s ease-in-out;
+  transition: 0.5 ease-in-out;
+  /*transition: border-radius 1s;*/
+}
+
+.select_zone_button:hover
+{
+  width:125px;
+  border-radius:75px;
 }
 
 .main_popover_title

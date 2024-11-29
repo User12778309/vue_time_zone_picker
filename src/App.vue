@@ -19,7 +19,7 @@ function easter_egg()
     <div class="p-5 m-5 doc_div">
 
       <button class="opacity-0 cursor-default" @mousedown="easter_egg">Grouaaaaaaaaaa</button>
-      <h1 class="doc_title">Framework use</h1>
+      <h1 class="doc_title text-6xl">Framework used</h1>
 
       <div class="flex  justify-around ">
         <a href="https://vite.dev" target="_blank" class="hover:scale-125 ease-out duration-300 hoverflex-1 p-5 w-100">
@@ -68,7 +68,6 @@ function easter_egg()
 
 .doc_title
 {
-  font-size:50px;
   font-family: "Courier New";
 }
 

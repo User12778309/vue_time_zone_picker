@@ -102,7 +102,7 @@ console.log(mouse.x)
 
   <img src="/public/canvas/fuseau-heure.png" class="absolute z-20">
   
-  <canvas v-for="item in canvas_data" :src="item.path" :id="item.id" class="absolute hover:opacity-0 opacity-50 z-40" @mouseleave="canvas_class.get_all_canvas"</canvas>
+  <canvas v-for="item in canvas_data" :src="item.path" :id="item.id" class="absolute z-40" @mouseleave="canvas_class.get_all_canvas"</canvas>
   <slot name="content">
 
   </slot>
