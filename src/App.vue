@@ -61,7 +61,7 @@ function easter_egg()
 </script>
 
 <template>
-  <div class="bg-gradient-to-t from-purple-500 via-black-500 to-black-500 body">
+  <div class="body">
   <div align="center" id="main_div">
     <div class="p-5 m-5 doc_div">
 
@@ -120,6 +120,7 @@ function easter_egg()
 
 .body
 {
-  height: 1500px;
+  height: 1000px;
+  background-image: linear-gradient(to bottom right, rgb(7, 4, 4), rgb(120, 3, 167));
 }
 </style>

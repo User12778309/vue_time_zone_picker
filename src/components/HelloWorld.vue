@@ -94,7 +94,8 @@ const op = ref();
   margin-top:100px;
   border:10px;
   border-color:rgba(56, 255, 179, 0.781) ;
-  border-style: inset
+  border-style: inset;
+  background-image: linear-gradient(to top left,green,black);
 }
 
 .select_zone_button
@@ -103,7 +104,6 @@ const op = ref();
   height:100px;
   width:200px;
   transition: width 0.5s ease-in-out;
-  transition: 0.5 ease-in-out;
   transition: border-radius 0.25s;
 }
 
@@ -111,6 +111,7 @@ const op = ref();
 {
   width:125px;
   border-radius:75px;
+  scale:1.2;
 }
 
 .main_popover_title
@@ -119,3 +120,4 @@ const op = ref();
 
 }
 </style>
+
