@@ -67,15 +67,30 @@ class Canvas
     {
       canvas_data.value.forEach((item )=> {
         const canvas = document.getElementById(item.id)
-        const canvas_context = canvas.GetContext("2d")
-        const canvas_image_data = canvas_context.getImageData(mouse.x,mouse.y,1,1)
+        console.log(canvas)
+        // const canvas_context = canvas.GetContext("2d")
+        //const canvas_image_data = canvas_context.getImageData(mouse.x,mouse.y,1,1)
 
-        const [r,g,b,a] = canvas_image_data.data
+        //const [r,g,b,a] = canvas_image_data.data
+
+        //if ( a > 0 )
+       // {
+       //   console.log("------------> X : " + mouse.x + " // --------------> Y : " + mouse.y + "// ---------------------> Zone : " + canvas.id)
+       //   canvas.classList.add("transition-opacity")
+       // }
+
+       // else
+       // {
+       //   canvas.classList.remove("opacity-10") 
+       //   canvas.classList.add("transition-opacity")
+       // }
+
       })
       
     }
 }
 
+const canvas_class = new Canvas
 
 
 console.log(mouse.x)
@@ -87,7 +102,7 @@ console.log(mouse.x)
 
   <img src="/public/canvas/fuseau-heure.png" class="absolute">
   
-  <img v-for="item in canvas_data" :src="item.path" :id="item.id" class="absolute hover:opacity-0 opacity-50 time_selector_canvas" @mouseleave="mouse.mouse_leave" @mousemove="mouse.mouse_move" @mousedown="mouse.mouse_down">
+  <img v-for="item in canvas_data" :src="item.path" :id="item.id" class="absolute hover:opacity-0 opacity-50 time_selector_canvas" @mouseleave="canvas_class.get_all_canvas">
   <slot name="content">
 
   </slot>
