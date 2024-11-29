@@ -1,0 +1,25 @@
+<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_img -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test canvas</title>
+    <script>
+        function Draw()
+        {
+            const my_canvas = document.getElementById("test")
+            const canvas_context = my_canvas.getContext("2d")
+            const my_image = document.getElementById("reference")
+            canvas_context.drawImage(my_image,2.6,0)
+        }
+    </script>
+</head>
+<body align="center">
+    <img src="https://www.w3schools.com/html/img_the_scream.jpg" style="margin-top:100px;" id="reference">
+    <canvas id="test" width="225px" height="275px" style="border:1px solid #d3d3d3;margin-left:100px;"></canvas>
+    <br>
+    <button style="margin-top:100px;width:100px;height:50px;font-size:25px;" onclick="Draw()">Draw</button>
+</body>
+</html>

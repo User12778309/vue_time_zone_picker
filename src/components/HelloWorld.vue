@@ -99,7 +99,7 @@ const op = ref();
   width:200px;
   transition: width 0.5s ease-in-out;
   transition: 0.5 ease-in-out;
-  /*transition: border-radius 1s;*/
+  transition: border-radius 0.25s;
 }
 
 .select_zone_button:hover
