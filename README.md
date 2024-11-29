@@ -64,12 +64,12 @@ Git CLI ne marché pas sur Linux , donc on a opté pour GitKraken
 
 - Problémes de partabilité JS : mon maître de stage êtant sur Mac OS et moi sur linux ( Debian ( kali linux ) ) , nous avons eu des problème de classe dû à l opacité des canvas 
 
-# Amelioration
+# Améliorations
 
 - Décoration du texte info popover
 - Evenement de la selection
 
 # Après le stage
 
-- Continué les framework cités
-- Faire les amélioration
+- Continuer à apprendre les framework cités
+- Faire les améliorations
