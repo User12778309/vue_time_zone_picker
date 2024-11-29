@@ -72,6 +72,11 @@ const op = ref();
 
 <style scoped>  /* Nothing Here */
 
+.easter_egg_div
+{
+  margin-top:375px;
+}
+
 .main_popover_div
 {
   height:500px;

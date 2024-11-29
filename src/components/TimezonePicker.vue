@@ -62,12 +62,11 @@ const mouse = new Mouse()
 
 class Canvas
 {
-
     get_all_canvas()
     {
       canvas_data.value.forEach((item )=> {
-        const canvas = document.getElementById(item.id)
-        console.log(canvas)
+      const canvas = document.getElementById(item.id)
+      console.log(canvas)
         // const canvas_context = canvas.GetContext("2d")
         //const canvas_image_data = canvas_context.getImageData(mouse.x,mouse.y,1,1)
 
