@@ -27,6 +27,7 @@ const timezones = [
   { id: "+10", path: "./canvas/+10.png" },
   { id: "+11", path: "./canvas/+11.png" },
   { id: "+12", path: "./canvas/+12.png" },
+  { id: "+13", path: "./canvas/+13.png" },
   { id: "0", path: "./canvas/0.png" },
 ];
 
