@@ -99,13 +99,14 @@ function detectHover(event) {
       const [r, g, b, a] = imageDataItem.data; // Couleurs RGBA
 
       if (a > 0){
-
-          item.canvas.classList.add("opacity-10");
-          info.value = `X: ${event.offsetX}, Y: ${event.offsetY}` + " Zone "+ item.id;
+        item.canvas.classList.remove("opacity-80")
+        item.canvas.classList.add("opacity-10");
+        info.value = `X: ${event.offsetX}, Y: ${event.offsetY}` + " Zone "+ item.id;
 
       }
       else{
           item.canvas.classList.remove("opacity-10")
+          item.canvas.classList.add("opacity-80");
           item.canvas.classList.add("transition-opacity");
       }
   })
