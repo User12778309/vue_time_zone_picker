@@ -70,7 +70,7 @@ class Canvas
         const canvas_context = canvas.GetContext("2d")
         const canvas_image_data = canvas_context.getImageData(mouse.x,mouse.y,1,1)
 
-        const [r,g,b] = canvas_image_data.data
+        const [r,g,b,a] = canvas_image_data.data
       })
       
     }

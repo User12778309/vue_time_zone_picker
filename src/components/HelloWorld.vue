@@ -90,6 +90,10 @@ const op = ref();
 .main_card
 {
   width:1000px;
+  margin-top:100px;
+  border:10px;
+  border-color:rgba(56, 255, 179, 0.781) ;
+  border-style: inset
 }
 
 .select_zone_button
