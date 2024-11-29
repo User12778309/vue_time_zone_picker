@@ -5,7 +5,7 @@
 
 # Demo
 
-![ video de demo]("demo.gif")
+![ video de demo](demo.gif)
 
 # Resumé :
 
