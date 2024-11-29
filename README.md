@@ -10,4 +10,16 @@
 
 ## Jour 1 :
 ### Decouvert du projet 
-### Brainstorming 
+### Brainstorming
+
+<br>
+
+## Jour 2 :
+### Decouvert des canvas
+### Istallation de GitKraken
+
+<br>
+
+## Jour 3 :
+### Mises en place des canvas
+### Création du easter egg
