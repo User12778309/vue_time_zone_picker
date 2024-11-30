@@ -149,10 +149,17 @@ onMounted(() => {
     </div>
 
     <!-- Affichage des coordonnées -->
-    <h1 class="mt-5">Info : {{ info }}</h1>
+    <h1 class="mt-5 popover_info_text">Info : {{ info }}</h1>
   </div>
 </template>
 
 <style scoped>
+
+.popover_info_text
+{
+  margin-top:30px;
+  font-size:30px;
+  font-family: 'Courier New';
+}
 
 </style>
